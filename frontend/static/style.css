@@ -1,0 +1,403 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Accessible Light Theme */
+/* Global White Background */
+body, .hero, .about-section, .services-section, .contact-section, .services-container {
+    background-color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    background: white !important;
+    color: #2D2D2D;
+}
+
+/* Cards should not turn yellow on hover */
+.card, .service-card {
+    background-color: white !important;
+    border: 2px solid #005BBB;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover, .service-card:hover {
+    transform: translateY(-5px);
+    background-color: white !important;
+}
+
+/* Button hover effect remains consistent */
+.choose-btn:hover {
+    background-color: white;
+    color: #005BBB;
+    border: 2px solid #005BBB;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #005BBB; /* High contrast Blue */
+    color: white;
+    padding: 1px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #E1E5EE, #F5F7FA);
+    color: #2D2D2D;
+    text-align: center;
+    padding: 100px 10px;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+.hero .btn {
+    background-color: #005BBB;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.hero .btn:hover {
+    background-color: #FFD700;
+    color: #2D2D2D;
+    border: 2px solid #005BBB;
+}
+
+/* Sections */
+.about-section, .services-section, .contact-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #E1E5EE;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Disability-Friendly Cards */
+.disability-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    color: #2D2D2D;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid #005BBB;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #FFD700;
+}
+
+/* Footer */
+footer {
+    background-color: #005BBB;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #F5F7FA;
+    padding: 50px 20px;
+}
+
+/* Service Card Styling */
+.service-card {
+    background-color: white;
+    color: #2D2D2D;
+    text-align: center;
+    padding: 25px; /* More padding for better spacing */
+    border-radius: 12px; /* Rounded corners */
+    width: 320px; /* Increase width slightly */
+    height: 400px; /* Increase card height */
+    border: 2px solid #005BBB;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing */
+}
+.feature-list p {
+    margin: 3px 0;
+}
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #181717
+}
+
+.service-icon {
+    font-size: 3rem; /* Adjust size */
+    color: #007BFF; /* Primary color */
+    margin-bottom: 10px;
+}
+
+/* Choose Plan Button */
+.features-btn {
+    background-color: #005BBB; /* Blue background */
+    color: white; /* White text */
+    font-size: 1.2rem; /* Slightly larger text */
+    padding: 12px 20px; /* Increase padding for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.features-btn:hover {
+    background-color: #007BFF; /* Yellow hover effect */
+    color: #2D2D2D;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* About Section with Image */
+/* About Section */
+.about {
+    background-color: white;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px; /* Same as Hero section */
+    width: 100%;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+
+/* About Text */
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    color: #2D2D2D;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.66rem;
+    line-height: 1.6;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* About Image */
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px; /* Same as Hero section */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 100px 20px;
+    max-width: 1200px;  /* Ensure enough space */
+    margin: auto;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.hero-text {
+    flex: 1; /* Allows text to expand */
+    max-width: 50%; /* Ensures it doesn’t take full width */
+    text-align: left;
+}
+
+.hero-image {
+    flex: 1; /* Allows image to expand */
+    max-width: 50%; /* Ensures it stays beside text */
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust size if needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typed-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 2px solid black;
+    font-size: 2rem;
+    animation: typing 3s steps(40, end) forwards;
+}
+/* Contact Section Styling */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: none; /* Remove the background */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove the shadow */
+    width: auto; /* Let it expand naturally */
+    margin: 0 auto;
+}
+
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}

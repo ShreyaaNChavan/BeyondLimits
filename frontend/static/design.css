@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #00ffc8;
+    text-shadow: 0 0 10px rgba(0, 255, 200, 0.8);
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00ffc8;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    background: linear-gradient(90deg, #00ffc8, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-illustration img {
+    height: 600px;
+    width: 500px;
+    filter: drop-shadow(0 0 20px rgba(0, 255, 200, 0.8));
+    border-radius: 50%;
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.primary {
+    background: #00ffc8;
+    color: black;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #00ffc8;
+    color: #00ffc8;
+}
+
+.primary:hover,
+.secondary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.8);
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.about-image img {
+    width: 500px;
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.8);
+}
+
+/* Testimonials */
+.testimonials-section {
+    padding: 50px;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 50%;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+}
+
+input,
+button {
+    padding: 15px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+button {
+    background: #00ffc8;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.hero-illustration img,
+.about-content,
+.features-grid,
+.testimonial,
+.contact-section {
+    animation: fadeIn 1.5s ease-in-out;
+}

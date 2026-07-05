@@ -1,0 +1,37 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore presentations
+*.ppt
+*.pptx
+*.pdf
+
+# Ignore videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+venv/
+.venv/
+
+BeyondLimitsDemo.mp4
+BeyondLimitsPPT - HP.pptx
+BeyondLimitsPPT.pdf
+BeyondLimitsPPT.pptx
+Lean Canvas Whiteboard (1).png
